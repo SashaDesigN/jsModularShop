@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/handlebars-v1.3.0.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="row">
+
+      <div id="shop" class="col-lg-8">
+        <h1 class="col-lg-8">Available items</h1>
+        <script type="text/x-handlebars-template" id="shop-item">
+        <div class="shop-item col-lg-8" data-id="{{id}}">
+          <h2>{{name}}</h2>
+          <img class="col-lg-4" src="{{img}}"/>
+          <p>{{desc}}</p>
+          <span class="h3 text-danger">{{price}} </span>
+          <div class="btn-group">
+            <input type="button" class="btn btn-info basket-add" data-target="Basket-add" value="Add to basket">
+            <input type="button" class="btn btn-info pay-add" data-target="Pay-add" value="Buy now">
+          </div>
+        </div>
+        </script>
+      </div>
+
+      <div id="basket" class="col-lg-4">
+        <h1 class="col-lg-8">Your basket</h1>
+        <script type="text/x-handlebars-template" id="basket-item">
+        <div class="basket-item col-lg-12" data-id="{{id}}">
+          <h2>{{title}}</h2>
+          <img src="{{img}}" class="col-lg-4"/>
+          <span class="h3 text-danger">{{price}} </span>
+          <div class="btn-group">
+            <input type="button" class="btn btn-info basket-remove" data-target="Basket-remove" value="Remove from basket">
+            <input type="button" class="btn btn-info pay-add" data-target="Pay-add" value="Buy now">
+          </div>
+        </div>
+        </script>
+      </div>
+
+    </div>
+
+    <script src="js/eventHandler.js"></script>
+    <script src="js/shop.js"></script>
+    <script src="js/basket.js"></script>
+    <script src="js/pay.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,34 @@
+[
+  {
+    "id":1,
+    "name":"jQuery in Action: 4th edition",
+    "price":"40$",
+    "desc":"This is fourth edition about most popular library of all times - jQuery.",
+    "img":"img/jquery.jpg",
+    "token":"34r4493if3940934="
+  },
+  {
+    "id":2,
+    "name":"Node.js in Action",
+    "price":"60$",
+    "desc":"Node.js it's more than JavaScript framework and this book will show you it.",
+    "img":"img/nodejs.png",
+    "token":"4494gsr3if3940934="
+  },
+  {
+    "id":3,
+    "name":"PHP7: step by step",
+    "price":"90$",
+    "desc":"This is how to make best server side part of any ideal Application.",
+    "img":"img/php7.jpg",
+    "token":"rt54r4493if3940934="
+  },
+  {
+    "id":4,
+    "name":"Introduction to Go",
+    "price":"45$",
+    "desc":"Want to create an App, which run as Forest? This book is for you!",
+    "img":"img/go.jpg",
+    "token":"dfdftg5dlfdslfew34="
+  }
+]
